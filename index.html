@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMVet Ветеринарная Клиника</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <!--  <div class="logo">
+            <img src="logo.png" alt="AMVet Logo"> Replace with actual logo image -->
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#specialists">Наши специалисты</a></li>
+                <li><a href="#articles">Статьи</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <!-- <p>ул. Пудовкина 6к3</p>
+            <p>ул. Лобачевского 104</p>-->
+            <a href="tel:+74950320469">+7 (915) 444-36-88</a>
+        </div>
+    </header>
+
+    
+    <!-- Main Section -->
+    <main>
+        <section class="hero">
+            <h1>Ветеринарная клиника</h1>
+            <p>Мы заботимся о ваших любимых!</p>
+            <div class="appointment-button-wrapper">
+                <button class="appointment-button" onclick="openForm()">Запись на прием</button>
+            </div>
+        </section>
+        
+        <div id="appointmentModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeForm()">&times;</span>
+                <h2>Запись на прием</h2>
+                <form id="appointmentForm">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="phone">Номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <button type="submit">Подать заявку</button>
+                </form>
+            </div>
+        </div>
+        
+        <main>
+            <div class="services-specialists">
+                <div class="card" id="services">
+                    <h2>Наши услуги</h2>
+                    <button class="card-button">Перейти</button>
+                </div>
+                <div class="card" id="specialists">
+                    <h2>Наши специалисты</h2>
+                    <button class="card-button">Перейти</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="social-media"> 
+            <h2>Мы в социальных сетях</h2>
+            <p class="subheading">Подписывайтесь на нас во ВКонтакте</p>
+            <p>Смотрите на жизнь клиники изнутри в нашем сообществе ВКонтакте. Подписывайтесь, чтобы быть в курсе последних новостей, а также эксклюзивных скидок и акций, которые мы подготовили специально для вас и ваших питомцев.</p>
+            <a href="https://vk.com/amvet" target="_blank" class="button">Перейти во ВКонтакте</a>
+        </section>
+        
+        
+        <section class="online-consultation">
+            <div class="consultation-content">
+                <h3>Телеветеринария</h3>
+                <h2>Онлайн-консультация ветеринара</h2>
+                <p>Для тех, кто не может физически обратиться в клинику AMVet, мы предоставляем услугу <a href="#">Онлайн-консультирование</a></p>
+                <button class="consultation-button">Записаться на онлайн консультацию</button>
+            </div>
+            <div class="consultation-image">
+                <img src="dog-image.png" alt="Cat looking to the side"> <!-- Замените на фактическое изображение -->
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 AMVet Ветеринарная Клиника. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
