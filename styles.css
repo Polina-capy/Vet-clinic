@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +9,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
+
 header {
-    background-color: #2c2c2c; /* Черный фон */
-    color: #fff; /* Белый текст */
+    background-color: #2c2c2c; 
+    color: #fff; 
     padding: 20px;
-    border-radius: 20px; /* Скругленные углы */
+    border-radius: 20px; 
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для хедера */
-    transition: all 0.3s ease; /* Плавный переход для анимации */
+    transition: all 0.3s ease; 
     position: absolute;
     width: 90%; /* Ширина хедера */
     top: 10px;
@@ -42,29 +42,29 @@ header ul {
 
 /* Анимация при наведении на ссылки */
 header ul li a:hover {
-    color: #ffffff; /* Изменение цвета при наведении */
-    transform: scale(1.1); /* Легкое увеличение при наведении */
+    color: #ffffff; 
+    transform: scale(1.1); 
 }
 
 /* Анимация для хедера при прокрутке */
 header.scrolled {
-    padding: 10px 20px; /* Уменьшение padding при прокрутке */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Увеличение тени */
-    border-radius: 15px; /* Слегка уменьшение радиуса */
+    padding: 10px 20px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+    border-radius: 15px; 
 }
 
 .menu {
     list-style: none;
     display: flex;
     gap: 20px;
-    font-weight: bold; /* Making the font bold */
+    font-weight: bold;
 }
 
 
 .menu li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold; /* Bold font */
+    font-weight: bold; 
 }
 
 
@@ -97,9 +97,9 @@ nav ul li a {
     color: #333;
 }
 
-/* Modal styling */
+
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     z-index: 1001;
     left: 0;
@@ -175,28 +175,32 @@ nav ul li a {
 
 .contacts a {
     text-decoration: none;
-    color: #4CAF50; /* Optional: a green color for phone number */
+    color: #4CAF50; 
 }
 
-/* Main Hero Section */
+
 .hero {
-    background: url('hero-image.jpg') no-repeat center center; /* Replace with actual hero image */
+    background: url('hero-image.jpg') no-repeat center center;
     background-size: cover;
     padding: 250px 70px;
-    padding-right: 260px; 
+    padding-right: 260px;
     text-align: right;
     color: #000000;
 }
-
 main {
-    margin-top: 80px; /* Adjust based on header height */
+    margin-top: 80px; 
 }
 
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 2.9em; /* Увеличенный размер заголовка */
+    margin: 0;
 }
 
+.hero p {
+    font-size: 1.6em; /* Увеличенный размер текста под заголовком */
+    margin: 10px 0 0;
+}
 .hero .button {
     background-color: #28a745;
     color: #fff;
@@ -210,7 +214,7 @@ main {
     background-color: #218838;
 }
 
-/* Information Section */
+
 .info {
     display: flex;
     justify-content: space-around;
@@ -240,7 +244,7 @@ main {
 }
 
 
-/* Footer */
+
 footer {
     background-color: #f8f9fa;
     text-align: center;
@@ -302,32 +306,32 @@ footer {
 }
 
 .appointment-button {
-    padding: 15px 30px;          /* Увеличенный размер кнопки */
-    font-size: 1.2em;            /* Более крупный текст */
-    background-color: #000;      /* Черный цвет фона */
-    color: #fff;                 /* Белый цвет текста */
+    padding: 15px 30px;          
+    font-size: 1.2em;         
+    background-color: #000;    
+    color: #fff;           
     border: none;
-    border-radius: 25px;         /* Скругленные края */
+    border-radius: 25px;     
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .appointment-button:hover {
-    background-color: #333;      /* Темно-серый при наведении */
-    transform: scale(1.05);      /* Легкое увеличение при наведении */
+    background-color: #333;     
+    transform: scale(1.05);   
 }
 
 .social-media {
     display: flex;
-    flex-direction: column; /* Упорядочим элементы вертикально */
-    align-items: flex-start; /* Выравниваем по левому краю */
+    flex-direction: column; 
+    align-items: flex-start; 
     padding: 20px;
-    max-width: 800px; /* Устанавливаем максимальную ширину для удобного чтения */
-    margin: 0 auto; /* Центрируем блок */
+    max-width: 800px; 
+    margin: 0 auto; 
     background-color: #f9f9f9;
-    border-radius: 8px; /* Скругление краёв блока */
+    border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
-    margin-bottom: 40px; /* Увеличьте значение для большего пространства */
+    margin-bottom: 40px; 
     
 }
 

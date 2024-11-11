@@ -1,0 +1,104 @@
+/* Основной стиль страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Хедер с черным фоном */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header .contacts a {
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Стили бокового меню */
+.services-container {
+    display: flex;
+    margin: 20px;
+}
+
+.services-list {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.services-list ul {
+    list-style-type: none; /* Убирает стандартные маркеры списка */
+    padding: 0;
+    margin: 0;
+}
+
+.services-list li {
+    padding: 8px 0; /* Добавляет немного пространства сверху и снизу */
+    border-bottom: 1px solid #ddd; /* Добавляет тонкую полоску */
+}
+
+.services-list li:last-child {
+    border-bottom: none; /* Убирает нижнюю границу у последнего элемента */
+}
+
+.services-list a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: #333; /* Задает цвет ссылок */
+    font-weight: bold;
+}
+
+.services-list a:hover {
+    color: #007acc; /* Цвет при наведении */
+}
+
+/* Стили контента услуг */
+.services-content {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.service-item:hover img {
+    transform: scale(1.05); /* Увеличивает изображение на 10% при наведении */
+}

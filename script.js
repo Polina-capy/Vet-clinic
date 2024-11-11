@@ -1,3 +1,11 @@
+
+if (targetId) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 document.querySelectorAll('header nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -37,4 +45,19 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+} 
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Останавливает стандартное поведение формы
+
+    // Показать сообщение об успешной отправке
+    const successMessage = document.getElementById("successMessage");
+    successMessage.classList.remove("hidden");
+
+    // Убираем сообщение через 3 секунды
+    setTimeout(function() {
+        successMessage.classList.add("hidden");
+    }, 3000);
+});
+
+
