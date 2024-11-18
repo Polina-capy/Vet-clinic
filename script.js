@@ -48,7 +48,7 @@ window.onclick = function(event) {
 } 
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Останавливает стандартное поведение формы
+    event.preventDefault(); 
 
     // Показать сообщение об успешной отправке
     const successMessage = document.getElementById("successMessage");
